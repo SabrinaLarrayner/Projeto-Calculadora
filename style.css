@@ -1,0 +1,202 @@
+@import url ('https://fonts.googleapis.com/css2? família=Nanum+Gothic&display=swap');
+
+
+{
+ margin: 0;
+ padding: 0;
+ box-sizing:boder-box ;
+ font-family : 'Quicksande', sans-serif;
+}
+
+header
+nav
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1
+ {   
+    width:20px;
+	height:20px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top:28px;
+	right:40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+nav a {
+    color: #412f2f00;
+    width:20px;
+	height:20px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top:40px;
+	right:50px;
+}
+nav img 
+{
+    width:23px;
+	height:23px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top:28px;
+	right:10px;
+    border-radius: 15px;    
+}
+nav h2
+ {   
+    width:20px;
+	height:20px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top:58px;
+	right:40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: antiquewhite;
+}
+
+.imglinkdin
+{
+    width:23px;
+	height:23px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top: 59px;
+	right:10px;
+    border-radius: 15px;    
+}
+
+.inputlinkdin 
+{
+    color: #3030300e;
+    width:20px;
+	height:20px;
+	margin:auto;
+	position:absolute;
+	display:table;
+	top:60px;
+	right:50px;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e0c0c;
+}
+
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#7611b196, #7b18d8c7);
+    clip-path: circle(22% at 30% 20%) ;
+}
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e99b35b0, #dba764c5);
+    clip-path: circle(20% at 70%  90%) ;
+}
+
+.container
+{
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius :6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    border-left: 1px solid rgba(255, 255, 255, 0.02);
+    box-shadow: 5px 5px 30px rgba(0 , 0, 0, 0.2);
+}
+
+.container .calculadora
+{
+    position: relative;
+    display: grid;
+}
+
+.container .calculadora .value
+{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.container .calculadora span
+{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: #ffffff; 
+    font-weight:400;
+    font-size: 20px;
+    user-select: none;
+    cursor:pointer;
+    border-bottom: 1px solid rgba(247, 8, 8, 0.05);
+    border-right: 1px solid rgba(46, 6, 6, 0.26);
+}
+.container .calculadora span:hover
+{
+    transition: 0;
+    background: rgba(235, 7, 7, 0.05); 
+}
+.container .calculadora span:active
+{
+    background: #3d04574f;
+    color: rgba(250, 240, 237, 0.664);
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.container .calculadora .clear
+{
+    grid-column: span 2;
+    width: 157px;
+    background: rgba(255, 255, 255, 0.05); 
+}
+.container .calculadora .plus
+{
+    grid-row: span 2;
+    height: 150px;
+}
+.equal
+{
+    background: rgba(255, 255, 255, 0.05); 
+}
+
